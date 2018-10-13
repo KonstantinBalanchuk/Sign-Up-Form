@@ -1,0 +1,135 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f9f9f9;
+}
+.main {
+    background: url(/img/bg.jpeg) no-repeat center top / cover;
+    width: 100%;
+}
+
+.container {
+    /* width: 1110px; */
+    min-height: 700px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.tabs {
+    padding: 0;
+    width: 1110px;  
+    float: none;
+    list-style: none;
+    position: relative;
+    margin: 120px 0;
+    text-align: left;
+}
+    li {
+      display: block;
+    }
+input[type="radio"] {
+        display:none;
+}
+
+.down{
+    margin-right: 10px;
+}
+.man {
+    margin: 3px;
+}
+.form {
+    text-align: left;
+    position: relative;
+    width:545px;
+}
+.up {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.input_form_sign {
+    margin-bottom: 40px;
+    position: relative;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #c6c6c6 ;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+  }
+.terms_and_cons {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+p {
+    width: 350px;
+}
+a {
+    text-decoration: none; 
+    color: #c6c6c6;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.link_forgot_pass {
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .btn_sign {
+    text-transform: uppercase;
+    background: linear-gradient(to top, #e9605d , #e96764);;
+    box-shadow: 0px 2px 20px 2px rgba(26,28,32,0.50);
+    border-radius: 8px;
+    padding: 15px 122px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+  }
+label {
+    display: block;
+    margin: 0;
+    padding: 5px 48px;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    background: #080808;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    /* transition-timing-function: ease-in-out;
+    transition: 0.2s; */
+}
+.tab-content{
+    height: 656px;
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; 
+    background:linear-gradient(to top right, #060e16,#0d1620);
+}
+
+[id^="tab"]:checked + label { 
+    font-size: 16px;
+    top: 0;
+    padding: 8px 52px;
+    background: #0d1620; 
+    cursor:default;
+}
+[id^="tab"]:checked ~ [id^="tab-content"] {
+    display: inline-flex;
+    }
